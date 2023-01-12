@@ -1,6 +1,15 @@
 <div class="my-16 md:mx-44">
-    <div class="mx-5 flex items-center justify-between">
-        <img class="md:w-16 w-10 pointer-events-none" src="../../assets/navbar/fitness-gym-logo-9191CD4CF2-seeklogo.com.png" alt="">
+    <div class="flex items-center justify-between">
+        <img class=" hidden md:block md:w-16 w-10 pointer-events-none" src="../../assets/navbar/fitness-gym-logo-9191CD4CF2-seeklogo.com.png" alt="">
+        <div class="md:hidden">
+            <div class="flex items-center">
+                <img (click)="accionMenu()" class="w-12 cont-menu pl-5 menu-ico rounded-lg  p-2" src="../../assets/navbar/menu-5-svgrepo-com.svg" alt="">
+                <div id="menu" class="menu flex space-x-10 text-2xl font-medium">
+                    <a href="#sucursales" class="hover:text-lime-500 cursor-pointer hover:underline">Sucursales</a>
+                    <a href="#planes" class="hover:text-lime-500 cursor-pointer hover:underline">Planes</a>
+                </div>
+            </div>
+        </div>
         <div class="hidden md:block flex space-x-16 text-2xl font-medium">
             <a href="#sucursales" class="hover:text-lime-500 cursor-pointer hover:underline">Sucursales</a>
             <a href="#planes" class="hover:text-lime-500 cursor-pointer hover:underline">Planes</a>
